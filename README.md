@@ -1,5 +1,6 @@
 # About
 Each stylesheet in this repo contains some basic CSS that improves the appearance and usability of common learning management systems (LMSs).
+
 The stylesheets were created by instructional designer and frontend web developer Amy Spielmaker as part of a conference session: "Hacking the LMS" at NWeLearn 2023. The stylesheets have been tested with standard LMS installations and default themes. If your LMS has other customizations, you may need to do some tweaking.
 ## How To Use
 Copy and paste the CSS from the relevant stylesheet into your LMSs global stylesheet. You will need the ability to add custom CSS in your LMS to do this.
