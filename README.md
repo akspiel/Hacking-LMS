@@ -3,11 +3,13 @@ Each stylesheet in this repo contains some basic CSS that improves the appearanc
 
 The stylesheets were created by instructional designer and frontend web developer Amy Spielmaker as part of a conference session: "Hacking the LMS" at NWeLearn 2023. The stylesheets have been tested with standard LMS installations and default themes. If your LMS has other customizations, you may need to do some tweaking.
 ## How To Use
-Copy and paste the CSS from the relevant stylesheet into your LMSs global stylesheet. You will need the ability to add custom CSS in your LMS to do this.
+Copy and paste the CSS from the relevant stylesheet into your LMSs global stylesheet or a specific stylesheet that's linked in your theme. You will need the ability to add custom CSS in your LMS to do this. I also recommend you are familiar with CSS and feel comfortable modifying CSS as needed (usually necessary when your LMS updates to a new version).
 ### Moodle (Boost Theme)
 1. Navigate to **Site administration** > **Appearance** > **Themes** > **Boost**
 2. Click the 'Advanced settings' tab.
 3. In the 'Raw initial SCSS' field, paste the CSS from the Moodle stylesheet in this repo.
+### Canvas
+[Follow these directions: How do I upload custom JavaScript and CSS files to an account?](https://community.canvaslms.com/t5/Admin-Guide/How-do-I-upload-custom-JavaScript-and-CSS-files-to-an-account/ta-p/253)
 ## Test First
 I recommend first doing a test with Chrome Developer Tools to see how the styles will be applied.
 1. In Chrome, open a course page in your LMS.
