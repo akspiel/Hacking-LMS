@@ -1,2 +1,17 @@
-# Hacking the LMS
-Custom CSS for LMS administrators to add to their global stylesheet.
+# About
+Each stylesheet in this repo contains some basic CSS that improves the appearance and usability of common learning management systems (LMSs).
+## How To Use
+Copy and paste the CSS from the relevant stylesheet into your LMSs global stylesheet. You will need the ability to add custom CSS in your LMS to do this.
+### Moodle (Boost Theme)
+1. Navigate to **Site administration** > **Appearance** > **Themes** > **Boost**
+2. Click the 'Advanced settings' tab.
+3. In the 'Raw initial SCSS' field, paste the CSS from the Moodle stylesheet in this repo.
+## Test First
+The stylesheets have been tested with standard installations and default themes. If your LMS has other customizations, you may need to do some tweaking. I recommend first doing a test with Chrome Developer Tools to see how the styles will be applied.
+1. In Chrome, open a course page in your LMS.
+2. Right-click anywhere and then select **Inspect** from the context menu. This will open Chrome Developer Tools.
+3. Make sure the 'Elements' tab is selected.
+4. Click the plus icon in the top right corner of the styles panel. This will create a local stylesheet called 'inspector-stylesheet' you can use for testing.
+5. Click the inspector-stylesheet link beside the style. This will open the stylesheet in the source editor.
+6. Paste the CSS from the stylesheet you're testing into the 'inspector-stylesheet' stylesheet. The styles will be applied and you can see how it looks.
+7. Repeat the steps above for any other pages you want to test.
