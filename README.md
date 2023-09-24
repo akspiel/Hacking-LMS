@@ -13,7 +13,7 @@ I recommend first doing a test with Chrome Developer Tools to see how the styles
 1. In Chrome, open a course page in your LMS.
 2. Right-click anywhere and then select **Inspect** from the context menu. This will open Chrome Developer Tools.
 3. Make sure the 'Elements' tab is selected.
-4. Click the plus icon in the top right corner of the styles panel. This will create a local stylesheet called 'inspector-stylesheet' you can use for testing.
+4. Click the plus icon in the top right corner of the styles panel. This will create a local stylesheet called `inspector-stylesheet you can use for testing.
 5. Click the inspector-stylesheet link beside the style. This will open the stylesheet in the source editor.
 6. Paste the CSS from the stylesheet you're testing into the 'inspector-stylesheet' stylesheet. The styles will be applied and you can see how it looks.
 7. Repeat the steps above for any other pages you want to test.
