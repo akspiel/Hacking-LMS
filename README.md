@@ -9,7 +9,7 @@ Copy and paste the CSS from the relevant stylesheet into your LMSs global styles
 2. Click the 'Advanced settings' tab.
 3. In the 'Raw initial SCSS' field, paste the CSS from the Moodle stylesheet in this repo.
 ### Canvas
-[Follow these directions: How do I upload custom JavaScript and CSS files to an account?](https://community.canvaslms.com/t5/Admin-Guide/How-do-I-upload-custom-JavaScript-and-CSS-files-to-an-account/ta-p/253)
+Follow these directions: [How do I upload custom JavaScript and CSS files to an account?](https://community.canvaslms.com/t5/Admin-Guide/How-do-I-upload-custom-JavaScript-and-CSS-files-to-an-account/ta-p/253)
 ## Test First
 I recommend first doing a test with Chrome Developer Tools to see how the styles will be applied.
 1. In Chrome, open a course page in your LMS.
@@ -19,4 +19,5 @@ I recommend first doing a test with Chrome Developer Tools to see how the styles
 5. Click the `inspector-stylesheet` link beside the style. This will open the stylesheet in the source editor.
 6. Paste the CSS from the stylesheet you're testing into the `inspector-stylesheet` stylesheet. The styles will be applied and you can see how it looks.
 7. Repeat the steps above for any other pages you want to test.
+
 [Learn more about stylesheets in Chrome Developer Tools](https://medium.com/@umarhamza/create-new-stylesheets-in-chrome-dev-tools-7e972c71f8a5)
