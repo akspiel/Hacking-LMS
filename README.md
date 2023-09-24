@@ -1,5 +1,6 @@
 # About
 Each stylesheet in this repo contains some basic CSS that improves the appearance and usability of common learning management systems (LMSs).
+The stylesheets were created by instructional designer and frontend web developer Amy Spielmaker as part of a conference session: "Hacking the LMS" at NWeLearn 2023. The stylesheets have been tested with standard LMS installations and default themes. If your LMS has other customizations, you may need to do some tweaking.
 ## How To Use
 Copy and paste the CSS from the relevant stylesheet into your LMSs global stylesheet. You will need the ability to add custom CSS in your LMS to do this.
 ### Moodle (Boost Theme)
@@ -7,7 +8,7 @@ Copy and paste the CSS from the relevant stylesheet into your LMSs global styles
 2. Click the 'Advanced settings' tab.
 3. In the 'Raw initial SCSS' field, paste the CSS from the Moodle stylesheet in this repo.
 ## Test First
-The stylesheets have been tested with standard installations and default themes. If your LMS has other customizations, you may need to do some tweaking. I recommend first doing a test with Chrome Developer Tools to see how the styles will be applied.
+I recommend first doing a test with Chrome Developer Tools to see how the styles will be applied.
 1. In Chrome, open a course page in your LMS.
 2. Right-click anywhere and then select **Inspect** from the context menu. This will open Chrome Developer Tools.
 3. Make sure the 'Elements' tab is selected.
