@@ -11,7 +11,7 @@ p:last-child, ul:last-child, ol:last-child {
 }
 /* making font size of top-level heading consistent */
 h1.h2 {
-  font-size: 2.34375rem;
+	font-size: 2.34375rem;
 }
 /*************************
 	BASIC IMAGE CHANGES
@@ -25,18 +25,18 @@ h1.h2 {
 *************************/
 /* secondary navigation - improving alignment */
 #page[data-region="mainpage"] .secondary-navigation .navigation {
-  margin: 0;
-  padding: 0;
-  border-top: 1px solid #dee2e6;
-  height: 61px;
+	margin: 0;
+	padding: 0;
+	border-top: 1px solid #dee2e6;
+	height: 61px;
 }
 /* course header - improving alignment */
 #page-header {
-  padding: 0;
+	padding: 0;
 }
 /* left sidebar menu - improving alignment */
 .courseindex .courseindex-item.indented {
-  margin-left: 0;
+	margin-left: 0;
 }
 /* left sidebar menu - matching clickable areas and visual indications */
 body:not(.editing) .courseindex .dragicon {
@@ -45,60 +45,60 @@ body:not(.editing) .courseindex .dragicon {
 .courseindex .courseindex-item .courseindex-link {
 	flex: 1;
 	margin: -0.5rem;
-  padding: 0.5rem;
+	padding: 0.5rem;
 }
 .courseindex .courseindex-item .completioninfo[data-value="NaN"] {
 	display: none;
 }
 .courseindex .courseindex-item .completioninfo[data-value="NaN"] + .courseindex-link {
-  padding-left: 32px;
-  margin-left: -8px;
+	padding-left: 32px;
+	margin-left: -8px;
 }
 /* left sidebar menu - making hover clear on dropdowns */
 .courseindex .courseindex-item .icons-collapse-expand {
 	height: 20px;
-  width: 20px;
+	width: 20px;
 	margin: 0 6px 0 -2px;
 	padding-right: 0;
-  border-radius: 100%;
-  border: none;
+	border-radius: 100%;
+	border: none;
 }
 .courseindex .courseindex-item .icons-collapse-expand:hover {
-  background-color: #dee2e6;
+	background-color: #dee2e6;
 }
 .courseindex .courseindex-item .icons-collapse-expand .icon-no-margin {
-  margin-right: 0 !important;
-  width: 100%;
-  height: 100%;
+	margin-right: 0 !important;
+	width: 100%;
+	height: 100%;
 }
 .courseindex .courseindex-item .icons-collapse-expand .icon {
-  height: 100%;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+	height: 100%;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 /*************************
 	BREADCRUMBS
 *************************/
 /* more contentional > symbol for indicating position */
 .breadcrumb:not(:empty) .breadcrumb-item {
-  display: flex;
+	display: flex;
 }
 .breadcrumb-item+.breadcrumb-item::before {
-  content: "\203A";
-  font-size: 1.75rem;
-  line-height: 17px;
+	content: "\203A";
+	font-size: 1.75rem;
+	line-height: 17px;
 	float: none;
-  font-weight: 300;
+	font-weight: 300;
 }
 /*************************
 	CONTENT AREAS
 *************************/
 /* more consistent and user-friendly content widths */
 #page.drawers {
-  padding-right: 2rem !important;
-  padding-left: 2rem !important;
+	padding-right: 2rem !important;
+	padding-left: 2rem !important;
 }
 #page.drawers .activity-header {
 	margin-left: 0;
@@ -120,87 +120,87 @@ body:not(.editing) .courseindex .dragicon {
 	IMPROVING APPEARANC OF COURSE LAYOUTS: ALL
 *************************/
 #region-main .course-content [data-for="sectioninfo"] {
-  margin: 0 !important;
+	margin: 0 !important;
 }
 .course-content .section .sectionbadges .badge {
 	margin-left: 0;
 }
 /* activity list items - better alignment, spacing, and visual hierarchy */
 .section .activity {
-  padding: 0;
-  border-top: 1px solid #dee2e6;
+	padding: 0;
+	border-top: 1px solid #dee2e6;
 }
 .section .activity:first-child {
-  border-top: 0;
+	border-top: 0;
 }
 .section .activity .activity-item, 
 .section .activity.indented .activity-item {
-  border: none;
-  border-radius: 0;
-  padding: 1.25rem 48px;
+	border: none;
+	border-radius: 0;
+	padding: 1.25rem 48px;
 }
 .section .activity .activity-instance {
-  font-weight: 600;
-  font-size: 1rem;
+	font-weight: 600;
+	font-size: 1rem;
 }
 .description .course-description-item {
   font-size: 90%;
 	padding: 10px;
-  border-radius: 4px !important;
+	border-radius: 4px !important;
 }
 .description .course-description-item:first-child {
-  margin-top: .5rem;
+	margin-top: .5rem;
 }
 .section .activity .activity-basis > .d-flex > div {
-  align-self: center;
+	align-self: center;
 }
 /* smaller activity icons */
 /* appearance everywhere */
 .activityiconcontainer {
-  padding: 0;
+	padding: 0;
 }
 .activityiconcontainer .activityicon, 
 .activityiconcontainer .icon {
-  width: 60%;
-  height: 60%;
+	width: 60%;
+	height: 60%;
 }
 /* just on course page */
 li.activity .activityiconcontainer {
-  width: 40px;
-  height: 40px;
+	width: 40px;
+	height: 40px;
 }
 /*************************
 	IMPROVING APPEARANC OF DEFAULT COURSE LAYOUT: "show all sections on one page"
 *************************/
 #region-main .course-content [data-for="course_sectionlist"] li.section:not(.section-summary) {
-  padding: 0;
-  border: 1px solid #dee2e6;
-  margin-bottom: 1rem;
+	padding: 0;
+	border: 1px solid #dee2e6;
+	margin-bottom: 1rem;
 }
 #region-main .course-content [data-for="course_sectionlist"] li.section:not(.section-summary) .course-section-header {
 	background-color: #f5f5f5;
 }
 .course-section .course-section-header > .d-flex.position-relative {
-  background-color: #f5f5f5;
-  padding: 1rem .5rem;
+	background-color: #f5f5f5;
+	padding: 1rem .5rem;
 	flex: 1;
 }
 .course-section .course-section-header > .position-relative ~ div {
-  position: relative;
-  padding: .5rem 1rem;
-  justify-content: right;
+	position: relative;
+	padding: .5rem 1rem;
+	justify-content: right;
 }
 .course-content .section .course-content-item-content .summarytext .description-inner {
-  padding: 1rem 48px;
-  border-bottom: 1px solid #dee2e6;
+	padding: 1rem 48px;
+	border-bottom: 1px solid #dee2e6;
 }
 .course-content #section-0:has(.icons-collapse-expand) {
-  margin-top: 40px;
+	margin-top: 40px;
 }
 .course-content #collapsesections {
-  position: absolute;
-  top: -40px;
-  right: 0;
+	position: absolute;
+	top: -40px;
+	right: 0;
 }
 /*************************
 	IMPROVING APPEARANC OF COURSE LAYOUT: "show one section per page"
@@ -211,10 +211,10 @@ li.activity .activityiconcontainer {
 }
 .course-content #section-0:not(:has(.icons-collapse-expand)) .activity .activity-item,
 .course-content #section-0:not(:has(.icons-collapse-expand)) .activity.indented .activity-item {
-  padding: 20px;
+	padding: 20px;
 }
 .course-content #section-0:not(:has(.icons-collapse-expand)) .course-description-item.summarytext {
-  padding: 0 20px 20px 20px;
+	padding: 0 20px 20px 20px;
 	border-bottom: 1px solid #dee2e6;
 }
 .course-content #section-0:not(:has(.icons-collapse-expand)) .sectionname {
@@ -233,10 +233,10 @@ li.activity .activityiconcontainer {
 	padding: 20px 0;
 }
 .single-section .section .activity:not(.indented) {
-  border-bottom: 2px solid currentColor;
+	border-bottom: 2px solid currentColor;
 }
 .single-section .section .activity:not(.indented) .activity-item {
-  padding-bottom: 0;
+	padding-bottom: 0;
 }
 .single-section .section {
 	padding-top: 0;
@@ -275,5 +275,5 @@ li.activity .activityiconcontainer {
 /* tables with icons */
 /* this is only needed if you're also loading the font-awesome stylesheet, which makes elements with icon classes display inline (usually OK but causes issues when icons are in table cells). */
 .generaltable td {
-  display: table-cell;
+	display: table-cell;
 }
