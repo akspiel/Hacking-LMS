@@ -272,6 +272,22 @@ li.activity .activityiconcontainer {
   font-style: italic;
 	margin-top: 1rem;
 }
+/*************************
+	EDITING VIEWS
+*************************/
+/* better spacing and alignment when editing main page view */
+.editing .btn.section-modchooser {
+	margin-left: 48px;
+	margin-right: 48px;
+	width: calc(100% - 96px);
+}
+.editing .btn.section-modchooser+.changenumsections {
+	padding-left: 48px;
+	padding-right: 48px;
+}
+/*************************
+	MISC
+*************************/
 /* tables with icons */
 /* this is only needed if you're also loading the font-awesome stylesheet, which makes elements with icon classes display inline (usually OK but causes issues when icons are in table cells). */
 .generaltable td {
