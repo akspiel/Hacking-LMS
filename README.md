@@ -8,6 +8,7 @@ Copy and paste the CSS from the relevant stylesheet into your LMSs global styles
 1. Navigate to **Site administration** > **Appearance** > **Themes** > **Boost**
 2. Click the 'Advanced settings' tab.
 3. In the 'Raw initial SCSS' field, paste the CSS from the Moodle stylesheet in this repo.
+
 ### Canvas
 Follow these directions: [How do I upload custom JavaScript and CSS files to an account?](https://community.canvaslms.com/t5/Admin-Guide/How-do-I-upload-custom-JavaScript-and-CSS-files-to-an-account/ta-p/253)
 ### Brightspace
