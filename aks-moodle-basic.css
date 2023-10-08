@@ -1,0 +1,279 @@
+/*
+Description: Basic CSS to improve the appearance and usability of Moodle 4.x
+Author: Amy Spielmaker
+Author URL: https://akspiel.com/
+*/
+/*************************
+	BASIC TEXT CHANGES
+*************************/
+p:last-child, ul:last-child, ol:last-child {
+	margin-bottom: 0;
+}
+/* making font size of top-level heading consistent */
+h1.h2 {
+  font-size: 2.34375rem;
+}
+/*************************
+	BASIC IMAGE CHANGES
+*************************/
+.atto_image_button_text-bottom {
+	margin: 0;
+	vertical-align: middle;
+}
+/*************************
+	NAVIGATION
+*************************/
+/* secondary navigation - improving alignment */
+#page[data-region="mainpage"] .secondary-navigation .navigation {
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid #dee2e6;
+  height: 61px;
+}
+/* course header - improving alignment */
+#page-header {
+  padding: 0;
+}
+/* left sidebar menu - improving alignment */
+.courseindex .courseindex-item.indented {
+  margin-left: 0;
+}
+/* left sidebar menu - matching clickable areas and visual indications */
+body:not(.editing) .courseindex .dragicon {
+	display: none;
+}
+.courseindex .courseindex-item .courseindex-link {
+	flex: 1;
+	margin: -0.5rem;
+  padding: 0.5rem;
+}
+.courseindex .courseindex-item .completioninfo[data-value="NaN"] {
+	display: none;
+}
+.courseindex .courseindex-item .completioninfo[data-value="NaN"] + .courseindex-link {
+  padding-left: 32px;
+  margin-left: -8px;
+}
+/* left sidebar menu - making hover clear on dropdowns */
+.courseindex .courseindex-item .icons-collapse-expand {
+	height: 20px;
+  width: 20px;
+	margin: 0 6px 0 -2px;
+	padding-right: 0;
+  border-radius: 100%;
+  border: none;
+}
+.courseindex .courseindex-item .icons-collapse-expand:hover {
+  background-color: #dee2e6;
+}
+.courseindex .courseindex-item .icons-collapse-expand .icon-no-margin {
+  margin-right: 0 !important;
+  width: 100%;
+  height: 100%;
+}
+.courseindex .courseindex-item .icons-collapse-expand .icon {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/*************************
+	BREADCRUMBS
+*************************/
+/* more contentional > symbol for indicating position */
+.breadcrumb:not(:empty) .breadcrumb-item {
+  display: flex;
+}
+.breadcrumb-item+.breadcrumb-item::before {
+  content: "\203A";
+  font-size: 1.75rem;
+  line-height: 17px;
+	float: none;
+  font-weight: 300;
+}
+/*************************
+	CONTENT AREAS
+*************************/
+/* more consistent and user-friendly content widths */
+#page.drawers {
+  padding-right: 2rem !important;
+  padding-left: 2rem !important;
+}
+#page.drawers .activity-header {
+	margin-left: 0;
+	margin-right: 0;
+}
+@media (min-width: 768px) {
+	.pagelayout-standard #page.drawers .main-inner, 
+	body.limitedwidth #page.drawers .main-inner,
+	#page.drawers .main-inner,
+	.header-maxwidth,
+	.secondary-navigation .navigation .nav-tabs	{
+		max-width: 1024px;
+	}
+	#page.drawers div[role="main"] {
+		padding: 0;
+	}
+}
+/*************************
+	IMPROVING APPEARANC OF COURSE LAYOUTS: ALL
+*************************/
+#region-main .course-content [data-for="sectioninfo"] {
+  margin: 0 !important;
+}
+.course-content .section .sectionbadges .badge {
+	margin-left: 0;
+}
+/* activity list items - better alignment, spacing, and visual hierarchy */
+.section .activity {
+  padding: 0;
+  border-top: 1px solid #dee2e6;
+}
+.section .activity:first-child {
+  border-top: 0;
+}
+.section .activity .activity-item, 
+.section .activity.indented .activity-item {
+  border: none;
+  border-radius: 0;
+  padding: 1.25rem 48px;
+}
+.section .activity .activity-instance {
+  font-weight: 600;
+  font-size: 1rem;
+}
+.description .course-description-item {
+  font-size: 90%;
+	padding: 10px;
+  border-radius: 4px !important;
+}
+.description .course-description-item:first-child {
+  margin-top: .5rem;
+}
+.section .activity .activity-basis > .d-flex > div {
+  align-self: center;
+}
+/* smaller activity icons */
+/* appearance everywhere */
+.activityiconcontainer {
+  padding: 0;
+}
+.activityiconcontainer .activityicon, 
+.activityiconcontainer .icon {
+  width: 60%;
+  height: 60%;
+}
+/* just on course page */
+li.activity .activityiconcontainer {
+  width: 40px;
+  height: 40px;
+}
+/*************************
+	IMPROVING APPEARANC OF DEFAULT COURSE LAYOUT: "show all sections on one page"
+*************************/
+#region-main .course-content [data-for="course_sectionlist"] li.section:not(.section-summary) {
+  padding: 0;
+  border: 1px solid #dee2e6;
+  margin-bottom: 1rem;
+}
+#region-main .course-content [data-for="course_sectionlist"] li.section:not(.section-summary) .course-section-header {
+	background-color: #f5f5f5;
+}
+.course-section .course-section-header > .d-flex.position-relative {
+  background-color: #f5f5f5;
+  padding: 1rem .5rem;
+	flex: 1;
+}
+.course-section .course-section-header > .position-relative ~ div {
+  position: relative;
+  padding: .5rem 1rem;
+  justify-content: right;
+}
+.course-content .section .course-content-item-content .summarytext .description-inner {
+  padding: 1rem 48px;
+  border-bottom: 1px solid #dee2e6;
+}
+.course-content #section-0:has(.icons-collapse-expand) {
+  margin-top: 40px;
+}
+.course-content #collapsesections {
+  position: absolute;
+  top: -40px;
+  right: 0;
+}
+/*************************
+	IMPROVING APPEARANC OF COURSE LAYOUT: "show one section per page"
+*************************/
+/* appearance of the top course overview section */
+.course-content #section-0:not(:has(.icons-collapse-expand)) {
+	border-radius: .5rem;
+}
+.course-content #section-0:not(:has(.icons-collapse-expand)) .activity .activity-item,
+.course-content #section-0:not(:has(.icons-collapse-expand)) .activity.indented .activity-item {
+  padding: 20px;
+}
+.course-content #section-0:not(:has(.icons-collapse-expand)) .course-description-item.summarytext {
+  padding: 0 20px 20px 20px;
+	border-bottom: 1px solid #dee2e6;
+}
+.course-content #section-0:not(:has(.icons-collapse-expand)) .sectionname {
+	padding: 20px 20px 0 20px;
+}
+/* appearance of the other sections when on course homepage */
+#region-main .course-content [data-for="course_sectionlist"] .section-summary {
+	padding: 20px;
+}
+/* appearance when viewing single section */
+.single-section .section .activity {
+	border: none;
+}
+.single-section .section .activity .activity-item, 
+.single-section .section .activity.indented .activity-item {
+	padding: 20px 0;
+}
+.single-section .section .activity:not(.indented) {
+  border-bottom: 2px solid currentColor;
+}
+.single-section .section .activity:not(.indented) .activity-item {
+  padding-bottom: 0;
+}
+.single-section .section {
+	padding-top: 0;
+}
+/* hide the top course overview section when viewing just one section */
+[data-for="course_sectionlist"] #section-0:first-child:last-child {
+	display: none;
+}
+/*************************
+	SINGLE ACTIVITY PAGES
+*************************/
+/* header */
+.path-mod #page-header h1.h2 {
+	margin: 0;
+}
+.page-context-header {
+	align-items: center;
+	gap: 0.25rem;
+}
+/* spacing between header and content */
+.path-mod .secondary-navigation {
+	margin-top: 12px;
+	padding-bottom: 0;
+}
+.path-mod #page-content:not(:empty) {
+	margin-top: 1rem;
+}
+.path-mod div[role="main"] .box.generalbox {
+	padding-top: 0 !important;
+}
+/* modified text on pages */
+.modified {
+  font-style: italic;
+	margin-top: 1rem;
+}
+/* tables with icons */
+/* this is only needed if you're also loading the font-awesome stylesheet, which makes elements with icon classes display inline (usually OK but causes issues when icons are in table cells). */
+.generaltable td {
+  display: table-cell;
+}
