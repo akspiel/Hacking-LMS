@@ -13,6 +13,10 @@ p:last-child, ul:last-child, ol:last-child {
 h1.h2 {
 	font-size: 2.34375rem;
 }
+/* underlining links in the main content area */
+#region-main a:not([role="button"]):not(.btn):not(.aalink) {
+	text-decoration: underline;
+}
 /*************************
 	BASIC IMAGE CHANGES
 *************************/
