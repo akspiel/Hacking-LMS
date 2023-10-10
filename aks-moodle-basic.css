@@ -6,10 +6,17 @@ Author URL: https://akspiel.com/
 /*************************
 	BASIC TEXT CHANGES
 *************************/
+/* fixing alignment on lists in main content area */
+#region-main ul:not(.pagination):not([data-for="course_sectionlist"]),
+#region-main ol:not(.pagination):not([data-for="course_sectionlist"]) {
+	padding-left: 1rem;
+	margin-left: 1rem;
+}
+/* removing margin on last elements */
 p:last-child, ul:last-child, ol:last-child {
 	margin-bottom: 0;
 }
-/* underlining links in the main content area */
+/* underlining links in main content area */
 #region-main a:not([role="button"]):not(.btn):not(.aalink) {
 	text-decoration: underline;
 }
