@@ -9,13 +9,18 @@ Author URL: https://akspiel.com/
 p:last-child, ul:last-child, ol:last-child {
 	margin-bottom: 0;
 }
-/* making font size of top-level heading consistent */
-h1.h2 {
-	font-size: 2.34375rem;
-}
 /* underlining links in the main content area */
 #region-main a:not([role="button"]):not(.btn):not(.aalink) {
 	text-decoration: underline;
+}
+/* making top-level heading consistently sized */
+h1.h2 {
+	font-size: 2.34375rem;
+}
+@media (max-width: 1200px) {
+	h1.h2 {
+		font-size: calc(1.044375rem + 1.7325vw);
+	}
 }
 /*************************
 	BASIC IMAGE CHANGES
