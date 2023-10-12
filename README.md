@@ -1,19 +1,14 @@
 ## About
-Each stylesheet in this repo contains some basic CSS that improves the appearance and usability of common learning management systems (LMSs).
+The stylesheet in this repo contains some basic CSS that improves the appearance and usability of the Moodle learning management systems (LMS).
 
-The stylesheets were created by instructional designer and frontend web developer Amy Spielmaker as part of a conference session: "Hacking the LMS" at NWeLearn 2023. The stylesheets have been tested with standard LMS installations and default themes. If your LMS has other customizations, you may need to do some tweaking.
+The stylesheet was created by instructional designer and frontend web developer Amy Spielmaker as part of a conference session: "Hacking the LMS" at NWeLearn 2023. The stylesheet has been tested with standard Moodle installations (version 4.x) and default Boost theme. If your LMS has other customizations, you may need to do some tweaking.
 ## How To Use
-Copy and paste the CSS from the relevant stylesheet into your LMSs global stylesheet or a specific stylesheet that's linked in your theme. You will need the ability to add custom CSS in your LMS to do this. I also recommend you are familiar with CSS and feel comfortable modifying CSS as needed (usually necessary when your LMS updates to a new version).
-### Moodle (Boost Theme)
+Copy and paste the CSS from the stylesheet into your LMSs global stylesheet or a specific stylesheet that's linked in your theme. You will need the ability to add custom CSS in your LMS to do this. I also recommend you are familiar with CSS and feel comfortable modifying CSS as needed (usually necessary when your LMS updates to a new version).
+### Moodle Boost Theme
 1. Navigate to **Site administration** > **Appearance** > **Themes** > **Boost**
 2. Click the 'Advanced settings' tab.
 3. In the 'Raw initial SCSS' field, paste the CSS from the Moodle stylesheet in this repo.
-
-### Canvas
-Follow these directions: [How do I upload custom JavaScript and CSS files to an account?](https://community.canvaslms.com/t5/Admin-Guide/How-do-I-upload-custom-JavaScript-and-CSS-files-to-an-account/ta-p/253)
-### Brightspace
-Follow these directions: [Set up style and branding with Creator + Content Styler](https://community.d2l.com/brightspace/kb/articles/4449-set-up-style-and-branding-with-creator-content-styler)
-## Test First
+## See How It Will Look
 I recommend first doing a test with Chrome Developer Tools to see how the styles will be applied.
 1. In Chrome, open a course page in your LMS.
 2. Right-click anywhere and then select **Inspect** from the context menu. This will open Chrome Developer Tools.
